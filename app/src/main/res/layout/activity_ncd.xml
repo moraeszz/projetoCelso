@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:context=".ImcActivity2">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/ncd_imagem"/>
+
+        <TextView
+            android:id="@+id/textViewTituloNcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="64dp"
+            android:text="Calcular NCD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-48dp"
+            app:cardBackgroundColor="#5DAAA3"
+            app:cardCornerRadius="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Peso:"
+                    android:padding="10dp"
+                    android:textAppearance="@style/lable_dark_background"/>
+
+
+                <EditText
+                    android:id="@+id/edit_text_qual_peso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Qual o seu peso?"
+                    android:inputType="number"
+                    android:padding="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Idade:"
+                    android:padding="10dp"
+                    android:textAppearance="@style/lable_dark_background"/>
+
+                <EditText
+                    android:id="@+id/edit_text_qual_idade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Me informe sua idade"
+                    android:inputType="number"
+                    android:padding="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Qual sua altura?"
+                    android:textAppearance="@style/lable_dark_background" />
+
+                <EditText
+                    android:id="@+id/edit_text_qual_altura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Me informe sua altura"
+                    android:inputType="number"
+                    android:padding="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Qual seu gênero?"
+                    android:textAppearance="@style/lable_dark_background" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/edit_text_masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masculino"
+                        android:textAppearance="@style/lable_dark_background"/>
+                    <RadioButton
+                        android:id="@+id/edit_text_feminino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feminino"
+                        android:textAppearance="@style/lable_dark_background"/>
+                  </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Me informe o seu nível de atividade?"
+                    android:textAppearance="@style/lable_dark_background"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/edit_text_nivel_leve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leve" />
+                    <RadioButton
+                        android:id="@+id/edit_text_nivel_moderado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Moderado" />
+                    <RadioButton
+                        android:id="@+id/edit_text_nivel_intenso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intenso" />
+                </RadioGroup>
+                <Button
+                    android:id="@+id/button_calcular_ncd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="48dp"
+                    android:background="@drawable/button_background"
+                    android:color="@android:color/white"
+                    android:text="Calcular NCD"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+
+
